@@ -1,5 +1,6 @@
 import React from "react";
 import "./Footer.css";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
@@ -11,7 +12,7 @@ export default function Footer() {
       <ul>
         <li>
           <a
-            href="https://github.com/kellyjfitz/react-weather-app"
+            href="https://github.com/kellyjfitz/dictionary-app"
             target="_blank"
             title="See this site on GitHub"
             rel="noopener noreferrer"
