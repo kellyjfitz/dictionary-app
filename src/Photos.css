@@ -1,0 +1,13 @@
+.Photos {
+  display: flex;
+
+  flex-wrap: wrap;
+}
+.pexels {
+  flex: 33%;
+}
+.pexels img {
+  width: 90%;
+  margin: 10px;
+  border-radius: 10px;
+}

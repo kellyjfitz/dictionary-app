@@ -5,7 +5,7 @@ import Photos from "./Photos";
 export default function Dictionary() {
   const [input, setInput] = useState("newspaper");
   const [data, setData] = useState({ ready: false });
-  const [pics, setPics] = useState({});
+  const [pics, setPics] = useState("null");
   const pexelsApiKey =
     "563492ad6f91700001000001cf62435470744df3998203cd92a65ade";
   function getDefinition() {
@@ -22,16 +22,16 @@ export default function Dictionary() {
         });
         console.log(response.data);
       });
-    // add back the below when the api gets unbusted
+
     axios
       .get(
-        `https://api.pexels.com/v1/search?query=${input}&page=1&per_page=8&orientation=square`,
+        `https://api.pexels.com/v1/search?query=${input}&page=1&per_page=6&orientation=square`,
         {
           headers: { Authorization: `Bearer ${pexelsApiKey}` },
         }
       )
       .then(function (response) {
-        setPics({ ready: true, photos: response.data.photos });
+        setPics(response.data.photos);
       });
   }
 
