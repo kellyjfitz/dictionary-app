@@ -1,6 +1,6 @@
 body {
   background-image: url("../public/paper-background.jpg");
-  background-color: #ffeacb, rgba(255, 255, 255, 0.13);
+  background-color: #ffeacb;
   background-blend-mode: multiply;
 }
 

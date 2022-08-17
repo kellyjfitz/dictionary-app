@@ -46,23 +46,28 @@ export default function Dictionary() {
   if (data.ready) {
     return (
       <div>
-        <h1>Dictionary</h1>
-        <form onSubmit={handleSubmit}>
-          <input
-            type="search"
-            onChange={handleInput}
-            placeholder="Search for a word"
-            autoFocus="on"
+        <div className="Header">
+          {" "}
+          <h1>Dictionary</h1>
+          <form onSubmit={handleSubmit}>
+            <input
+              type="search"
+              onChange={handleInput}
+              placeholder="Search for a word"
+              autoFocus="on"
+            />
+            <button type="submit">F</button>
+          </form>
+        </div>
+        <div className="container">
+          <Word
+            word={data.word}
+            meanings={data.meanings}
+            phoneticText={data.phoneticText}
+            phoneticAudio={data.phoneticAudio}
           />
-          <button type="submit">F</button>
-        </form>
-        <Word
-          word={data.word}
-          meanings={data.meanings}
-          phoneticText={data.phoneticText}
-          phoneticAudio={data.phoneticAudio}
-        />
-        <Photos photos={pics} />
+          <Photos photos={pics} />
+        </div>
       </div>
     );
   } else {

@@ -6,8 +6,10 @@ import Antonyms from "./Antonyms";
 export default function Word(props) {
   return (
     <div>
-      <h2>{props.word}</h2>
-      <p>{props.phoneticText}</p>
+      <section>
+        <h2>{props.word}</h2>
+        <p>{props.phoneticText}</p>
+      </section>
       {props.meanings.map(function (meaning, index) {
         return (
           <section key={index}>
