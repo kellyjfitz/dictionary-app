@@ -2,6 +2,13 @@ import React, { useState } from "react";
 import axios from "axios";
 import Word from "./Word";
 import Photos from "./Photos";
+import Form from "react-bootstrap/Form";
+import InputGroup from "react-bootstrap/InputGroup";
+import Button from "react-bootstrap/Button";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSpinner } from "@fortawesome/free-solid-svg-icons";
+import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+
 export default function Dictionary() {
   const [input, setInput] = useState("newspaper");
   const [data, setData] = useState({ ready: false });
@@ -49,15 +56,19 @@ export default function Dictionary() {
         <div className="Header">
           {" "}
           <h1>Dictionary</h1>
-          <form onSubmit={handleSubmit}>
-            <input
-              type="search"
-              onChange={handleInput}
-              placeholder="Search for a word"
-              autoFocus="on"
-            />
-            <button type="submit">F</button>
-          </form>
+          <Form onSubmit={handleSubmit}>
+            <InputGroup>
+              <Form.Control
+                type="search"
+                onChange={handleInput}
+                placeholder="Search for a word"
+                autoFocus="on"
+              />
+              <Button type="submit">
+                <FontAwesomeIcon icon={faMagnifyingGlass} />
+              </Button>
+            </InputGroup>
+          </Form>
         </div>
         <div className="container">
           <Word

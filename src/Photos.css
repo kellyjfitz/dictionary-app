@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
-  margin-left: -12px;
+  margin-left: -10px;
 }
 .pexels {
   flex: 33%;
@@ -13,4 +13,10 @@
   border-radius: 10px;
   margin: 10px;
   width: 95%;
+}
+
+@media (max-width: 768px) {
+  .pexels {
+    flex: 50%;
+  }
 }

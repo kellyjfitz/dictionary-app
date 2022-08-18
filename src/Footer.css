@@ -5,8 +5,8 @@ footer {
   margin: 40px 0;
 }
 footer ul {
-  color: black;
-  font-size: 25px;
+  color: white;
+  font-size: 35px;
   padding: 0;
   text-align: center;
   margin: 0;
@@ -22,5 +22,10 @@ footer a {
   padding: 0 3px;
 }
 footer a:hover {
-  color: black;
+  color: rgb(172, 135, 85);
+}
+@media (max-width: 576px) {
+  footer {
+    margin-top: 20px;
+  }
 }
