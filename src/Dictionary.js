@@ -83,6 +83,8 @@ export default function Dictionary() {
     );
   } else {
     getDefinition();
-    return "loading";
+    return (
+      <FontAwesomeIcon icon={faSpinner} spin size="8x" className="spinner" />
+    );
   }
 }

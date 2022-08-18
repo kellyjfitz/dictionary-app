@@ -53,6 +53,12 @@ section {
 ol {
   padding-left: inherit;
 }
+.spinner {
+  color: white;
+  display: block;
+  margin: 0 auto;
+  padding-top: 30px;
+}
 
 @media (max-width: 992px) {
   .container {
