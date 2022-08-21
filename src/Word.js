@@ -1,14 +1,18 @@
 import React from "react";
+
 import Definitions from "./Definitions";
 import Synonyms from "./Synonyms";
 import Antonyms from "./Antonyms";
-
+import Audio from "./Audio";
 export default function Word(props) {
   return (
     <div>
       <section>
         <h2>{props.word}</h2>
-        <p>{props.phoneticText}</p>
+        <p>
+          <Audio sound={props.phoneticAudio} />
+          {props.phoneticText}
+        </p>
       </section>
       {props.meanings.map(function (meaning, index) {
         return (
