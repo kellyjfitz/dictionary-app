@@ -1,11 +1,11 @@
 import React from "react";
 import "./Photos.css";
 export default function Photos(props) {
-  console.log(props.photos);
-  if (props.photos) {
+  if (props.pics) {
+    console.log(props.pics);
     return (
       <div className="Photos">
-        {props.photos.map(function (pic, index) {
+        {props.pics.map(function (pic, index) {
           const attribution = `Photo by ${pic.photographer}`;
           return (
             <div key={index} className="pexels">
@@ -23,6 +23,6 @@ export default function Photos(props) {
       </div>
     );
   } else {
-    return "this sucks";
+    return null;
   }
 }

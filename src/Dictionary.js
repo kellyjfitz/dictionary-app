@@ -12,7 +12,7 @@ import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 export default function Dictionary() {
   const [input, setInput] = useState("newspaper");
   const [data, setData] = useState({ ready: false });
-  const [pics, setPics] = useState("null");
+  const [pics, setPics] = useState(null);
   const pexelsApiKey =
     "563492ad6f91700001000001cf62435470744df3998203cd92a65ade";
   function getDefinition() {
@@ -53,7 +53,7 @@ export default function Dictionary() {
   if (data.ready) {
     return (
       <div>
-        <div className="Header">
+        <div className="Head">
           {" "}
           <h1>Dictionary</h1>
           <Form onSubmit={handleSubmit}>
@@ -77,7 +77,7 @@ export default function Dictionary() {
             phoneticText={data.phoneticText}
             phoneticAudio={data.phoneticAudio}
           />
-          <Photos photos={pics} />
+          <Photos pics={pics} />
         </div>
       </div>
     );
