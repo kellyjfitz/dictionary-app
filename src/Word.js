@@ -11,7 +11,7 @@ export default function Word(props) {
       <section>
         <h2>{props.word}</h2>
         <p>
-<Phonetics audio={props.phoneticAudio} text={props.phoneticText} />
+<Phonetics phonetics={props.phonetics} ready={props.ready} />
           
         </p>
       </section>

@@ -23,8 +23,8 @@ export default function Dictionary() {
           ready: true,
 
           word: response.data[0].word,
-          phoneticText: response.data[0].phonetics[0].text,
-          phoneticAudio: response.data[0].phonetics[0].audio,
+          phonetics: response.data[0].phonetics,
+          
           meanings: response.data[0].meanings,
         });
         console.log(response.data);
@@ -74,8 +74,8 @@ export default function Dictionary() {
           <Word
             word={data.word}
             meanings={data.meanings}
-            phoneticText={data.phoneticText}
-            phoneticAudio={data.phoneticAudio}
+            phonetics={data.phonetics}
+            ready ={data.ready}
           />
           <Photos pics={pics} />
         </div>
