@@ -20,7 +20,7 @@ export default function Phonetics (props) {
 <span>
       <FontAwesomeIcon icon={faCirclePlay } onClick={play} className="playButton" />
       
-    </span>{" "}
+    </span>
      {props.text}
         </p>
     )
