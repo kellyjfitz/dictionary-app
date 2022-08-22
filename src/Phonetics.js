@@ -1,6 +1,6 @@
 import React from "react";
 
-import {Howl, Howler} from 'howler';
+import {Howl} from 'howler';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { faCirclePlay } from "@fortawesome/free-solid-svg-icons";
