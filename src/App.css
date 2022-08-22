@@ -63,11 +63,11 @@ ol {
 }
 
 .playButton {
-  font-size:30px;
+  font-size:20px;
   padding-right:5px;
 
  position:relative;
- top: 5px;
+ top: 2px;
 }
 
 
