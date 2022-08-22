@@ -8,7 +8,7 @@ import { faCirclePlay } from "@fortawesome/free-solid-svg-icons";
 export default function Phonetics (props) {
 
 return (
-<div>
+<ol>
 {props.phonetics.map(function (phonetic, index) 
 
 {
@@ -20,12 +20,10 @@ return (
     }
      return (
 
-<p className="phonetics" key={index}>
+<li className="phonetics" key={index}>
     {phonetic.audio.length>0 ? <FontAwesomeIcon icon={faCirclePlay} className="playButton" onClick={play} /> : null }
-    
-
-    {phonetic.text}
-</p>
+       {phonetic.text}
+</li>
 
 );
 
@@ -34,7 +32,7 @@ return (
 }
 
 )}
-</div>
+</ol>
 
 );
 

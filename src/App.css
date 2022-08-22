@@ -27,6 +27,9 @@ h2 {
   font-size: 36px;
 }
 
+p {
+  margin-bottom: 0;
+}
 section {
   background: rgba(255, 255, 255, 0.5);
   border-radius: 20px;
@@ -52,6 +55,7 @@ section {
 }
 ol {
   padding-left: inherit;
+  margin-bottom:0;
 }
 .spinner {
   color: white;
@@ -61,15 +65,18 @@ ol {
 }
 
 .playButton {
-  font-size:40px;
-  padding-right:10px;
+  font-size:30px;
+  padding-right:5px;
+
+ position:relative;
+ top: 5px;
 }
 
-.phonetics {
-  display: flex;
-  align-items:center;
-}
-.phonetics:hover {
+
+
+
+
+.playButton:hover {
   cursor: pointer;
 } 
 

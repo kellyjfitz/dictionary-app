@@ -10,10 +10,10 @@ export default function Word(props) {
     <div>
       <section>
         <h2>{props.word}</h2>
-        <p>
+        
 <Phonetics phonetics={props.phonetics} ready={props.ready} />
           
-        </p>
+       
       </section>
       {props.meanings.map(function (meaning, index) {
         return (
