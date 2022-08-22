@@ -52,9 +52,8 @@ export default function Dictionary() {
 
   if (data.ready) {
     return (
-      <div>
-        <div className="Head">
-          {" "}
+      <div className="container">
+       <div className="Head">
           <h1>Dictionary</h1>
           <Form onSubmit={handleSubmit}>
             <InputGroup>
@@ -69,8 +68,8 @@ export default function Dictionary() {
               </Button>
             </InputGroup>
           </Form>
-        </div>
-        <div className="container">
+          </div>
+      
           <Word
             word={data.word}
             meanings={data.meanings}
@@ -78,7 +77,7 @@ export default function Dictionary() {
             ready ={data.ready}
           />
           <Photos pics={pics} />
-        </div>
+       
       </div>
     );
   } else {
