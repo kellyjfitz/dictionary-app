@@ -2,7 +2,6 @@ import React from "react";
 import "./Photos.css";
 export default function Photos(props) {
   if (props.pics) {
-    console.log(props.pics);
     return (
       <div className="Photos">
         {props.pics.map(function (pic, index) {

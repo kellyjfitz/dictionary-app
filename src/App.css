@@ -10,9 +10,6 @@ h3 {
 .Head {
   padding: 60px;
   text-align: center;
-
-
-  
 }
 h1 {
   margin-bottom: 70px;
@@ -53,7 +50,7 @@ section {
 }
 ol {
   padding-left: inherit;
-  margin-bottom:0;
+  margin-bottom: 0;
 }
 .spinner {
   color: white;
@@ -63,20 +60,19 @@ ol {
 }
 
 .playButton {
-  font-size:20px;
-  padding-right:5px;
+  font-size: 20px;
+  padding-right: 5px;
 
- position:relative;
- top: 2px;
+  position: relative;
+  top: 2px;
 }
-
-
-
-
 
 .playButton:hover {
   cursor: pointer;
-} 
+}
+.example {
+  display: block;
+}
 
 @media (max-width: 992px) {
   .container {
@@ -120,7 +116,7 @@ ol {
   body {
     font-size: 14px;
   }
-  
+
   .input-group {
     max-width: 280px;
   }
