@@ -8,6 +8,7 @@ import Button from "react-bootstrap/Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSpinner } from "@fortawesome/free-solid-svg-icons";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import "./Dictionary.css";
 
 export default function Dictionary() {
   const [input, setInput] = useState("newspaper");
@@ -24,7 +25,7 @@ export default function Dictionary() {
 
           word: response.data[0].word,
           phonetics: response.data[0].phonetics,
-          
+
           meanings: response.data[0].meanings,
         });
         console.log(response.data);
@@ -53,7 +54,7 @@ export default function Dictionary() {
   if (data.ready) {
     return (
       <div className="container">
-       <div className="Head">
+        <div className="Head">
           <h1>Dictionary</h1>
           <Form onSubmit={handleSubmit}>
             <InputGroup>
@@ -68,16 +69,15 @@ export default function Dictionary() {
               </Button>
             </InputGroup>
           </Form>
-          </div>
-      
-          <Word
-            word={data.word}
-            meanings={data.meanings}
-            phonetics={data.phonetics}
-            ready ={data.ready}
-          />
-          <Photos pics={pics} />
-       
+        </div>
+
+        <Word
+          word={data.word}
+          meanings={data.meanings}
+          phonetics={data.phonetics}
+          ready={data.ready}
+        />
+        <Photos pics={pics} />
       </div>
     );
   } else {

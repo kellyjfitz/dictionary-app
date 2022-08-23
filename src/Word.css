@@ -1,0 +1,26 @@
+h2 {
+  font-size: 36px;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+ol {
+  padding-left: inherit;
+  margin-bottom: 0;
+}
+.playButton {
+  font-size: 20px;
+  padding-right: 5px;
+
+  position: relative;
+  top: 2px;
+}
+
+.playButton:hover {
+  cursor: pointer;
+}
+.example {
+  display: block;
+}
