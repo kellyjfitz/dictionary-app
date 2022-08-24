@@ -29,17 +29,19 @@ export default function Dictionary() {
           meanings: response.data[0].meanings,
         });
         console.log(response.data);
-      });
-
-    axios
-      .get(
-        `https://api.pexels.com/v1/search?query=${input}&page=1&per_page=6&orientation=square`,
-        {
-          headers: { Authorization: `Bearer ${pexelsApiKey}` },
-        }
-      )
-      .then(function (response) {
-        setPics(response.data.photos);
+        axios
+          .get(
+            `https://api.pexels.com/v1/search?query=${input}&page=1&per_page=6&orientation=square`,
+            {
+              headers: { Authorization: `Bearer ${pexelsApiKey}` },
+            }
+          )
+          .then(function (response) {
+            setPics(response.data.photos);
+          });
+      })
+      .catch(function () {
+        alert("Sorry, we can't find that word. Please try another one.");
       });
   }
 
