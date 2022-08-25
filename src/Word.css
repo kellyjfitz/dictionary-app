@@ -11,11 +11,11 @@ ol {
   margin-bottom: 0;
 }
 .playButton {
-  font-size: 20px;
+  font-size: 40px;
   padding-right: 5px;
 
   position: relative;
-  top: 2px;
+  top: 8.5px;
 }
 
 .playButton:hover {
@@ -23,4 +23,5 @@ ol {
 }
 .example {
   display: block;
+  opacity:0.7;
 }
