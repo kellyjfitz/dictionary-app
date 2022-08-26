@@ -9,7 +9,7 @@ h1 {
   font-weight: 700;
 
   font-size: 90px;
-  color: white;
+  color:rgb(68, 48, 21);
 }
 h2 {
   font-size: 36px;
@@ -41,3 +41,4 @@ section {
   background: rgb(96, 70, 36);
   border-color: rgb(96, 70, 36);
 }
+

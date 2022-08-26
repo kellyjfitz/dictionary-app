@@ -1,8 +1,12 @@
 body {
-  background-image: url("../public/paper-background.jpg");
-  background-color: rgb(96, 70, 36);
-  background-blend-mode: multiply;
-  font-family: "Roboto Condensed", sans-serif;
+  background-image: url("../public/lots-pages.jpg");
+  background-size:100%;
+  background-attachment:fixed;
+  background-color:#704214;
+  background-blend-mode:luminosity;
+  
+  font-family: "Roboto", sans-serif;
+  color: rgb(68, 48, 21);
 }
 
 .container {

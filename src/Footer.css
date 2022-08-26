@@ -1,5 +1,5 @@
 footer {
-  color:white;
+  
   padding: 5px;
   font-size: 14px;
   text-align: center;
@@ -23,7 +23,9 @@ a.icon {
   padding: 0 3px
 }
 a:hover {
-  color: rgb(172, 135, 85);
+  
+  color: black;
+  
 }
 
 .portfolio {

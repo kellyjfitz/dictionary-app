@@ -56,6 +56,9 @@ export default function Dictionary() {
   if (data.ready) {
     return (
       <div className="container">
+        <div className="image">
+          
+        </div>
         <div className="Head">
           <h1>Dictionary</h1>
           <Form onSubmit={handleSubmit}>
