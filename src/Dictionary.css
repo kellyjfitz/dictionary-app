@@ -9,10 +9,11 @@ h1 {
   font-weight: 700;
 
   font-size: 90px;
-  color:rgb(68, 48, 21);
+  color: rgb(68, 48, 21);
 }
 h2 {
   font-size: 36px;
+  margin-bottom: 4px;
 }
 
 p {
@@ -32,13 +33,15 @@ section {
   max-width: 500px;
   margin: 0 auto;
 }
+.magnifyingGlass {
+  color: rgb(96, 70, 36);
+}
 .btn-primary {
-  background: rgb(172, 135, 85);
-  border-color: rgb(172, 135, 85);
+  background: rgb(191, 149, 95);
+  border-color: rgb(191, 149, 95);
 }
 .btn:hover,
 .btn:active {
-  background: rgb(96, 70, 36);
-  border-color: rgb(96, 70, 36);
+  background: white;
+  border-color: white;
 }
-

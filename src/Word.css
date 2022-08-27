@@ -20,8 +20,9 @@ ol {
 
 .playButton:hover {
   cursor: pointer;
+  color: rgb(172, 135, 85);
 }
 .example {
   display: block;
-  opacity:0.8;
+  opacity: 0.8;
 }

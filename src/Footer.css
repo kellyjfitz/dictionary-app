@@ -1,12 +1,10 @@
 footer {
-  
   padding: 5px;
   font-size: 14px;
   text-align: center;
   margin: 40px 0;
 }
- .icon {
-
+.icon {
   font-size: 40px;
   padding: 0;
   text-align: center;
@@ -15,21 +13,18 @@ footer {
   padding: 0 3px;
 }
 a {
-  color:inherit;
+  color: inherit;
 }
 a.icon {
- 
   text-decoration: none;
-  padding: 0 3px
+  padding: 0 3px;
 }
 a:hover {
-  
-  color: black;
-  
+  color: white;
 }
 
 .portfolio {
-  font-size:35px;
+  font-size: 35px;
   position: relative;
   top: -2px;
 }

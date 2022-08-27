@@ -56,9 +56,7 @@ export default function Dictionary() {
   if (data.ready) {
     return (
       <div className="container">
-        <div className="image">
-          
-        </div>
+        <div className="image"></div>
         <div className="Head">
           <h1>Dictionary</h1>
           <Form onSubmit={handleSubmit}>
@@ -70,7 +68,10 @@ export default function Dictionary() {
                 autoFocus="on"
               />
               <Button type="submit">
-                <FontAwesomeIcon icon={faMagnifyingGlass} />
+                <FontAwesomeIcon
+                  icon={faMagnifyingGlass}
+                  className="magnifyingGlass"
+                />
               </Button>
             </InputGroup>
           </Form>
