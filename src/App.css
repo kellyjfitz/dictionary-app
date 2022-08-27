@@ -1,10 +1,11 @@
 body {
   background-image: url("../public/lots-pages.jpg");
-  background-size:100%;
-  background-attachment:fixed;
-  background-color:#704214;
-  background-blend-mode:luminosity;
-  
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: #704214;
+  background-blend-mode: luminosity;
+  background-repeat: no-repeat;
+
   font-family: "Roboto", sans-serif;
   color: rgb(68, 48, 21);
 }
