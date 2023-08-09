@@ -1,3 +1,6 @@
+# Dictionary app 
+Dictionary app created as part of the sheCodes course. https://spectacular-malabi-b71e1e.netlify.app/ 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
